@@ -10,4 +10,5 @@ locals {
 resource "apstra_tag" "host_tags" {
     for_each    = local.hosts
     name        = each.key
+    description = each.key
 }
